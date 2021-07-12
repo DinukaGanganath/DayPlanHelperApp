@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/second"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_rectangle"
+            android:padding="16dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/SignUpTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Sign up"
+                android:textSize="30dp"
+                android:textColor="@color/border"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Username"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/SignUpTitle"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/nameTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="text"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/EmailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Email address"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/nameEdit"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/EmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EmailTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/PasswordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Password"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EmailEdit"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/PasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/PasswordTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="textPassword"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/ConfirmPasswordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Confirm Password"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/PasswordEdit"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/ConfirmPasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/ConfirmPasswordTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="textPassword"
+                android:padding="5dp"/>
+            <Button
+                android:id="@+id/SignupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ConfirmPasswordEdit"
+                android:text="Sign up"
+                android:backgroundTint="@color/border"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

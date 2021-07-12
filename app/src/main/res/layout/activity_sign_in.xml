@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:background="@drawable/first"
+    android:padding="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_rectangle"
+            android:padding="16dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/TitleUi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textSize="30dp"
+                android:textColor="@color/border"
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/TitleUi"
+                android:hint="   Email"
+                android:drawableStart="@drawable/ic_email"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                android:background="@drawable/custom_box"
+                android:inputType="textEmailAddress"
+                android:padding="5dp">
+            </EditText>
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/Email"
+                android:hint="   Password"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/ic_password"
+                android:layout_marginBottom="30dp"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_box"
+                android:padding="5dp">
+            </EditText>
+            <Button
+                android:id="@+id/SignInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Password"
+                android:textSize="20dp"
+                android:text="Sign in"
+                android:backgroundTint="@color/border"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp">
+            </Button>
+            <TextView
+                android:id="@+id/SignUpLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haven't an account? Sign up here"
+                android:layout_below= "@id/SignInButton"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/border"
+                android:clickable="true"/>
+        </RelativeLayout>
+</RelativeLayout>
