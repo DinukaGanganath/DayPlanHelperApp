@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Day Plan Helper</string>
+    <string-array name="categories">
+        <item>Meeting</item>
+        <item>Lecture</item>
+        <item>Shopping</item>
+        <item>Other</item>
+    </string-array>
 </resources>

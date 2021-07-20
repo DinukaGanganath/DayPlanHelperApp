@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DayActivityShedules"
+android:background="@drawable/first"
+android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/RelLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_rectangle"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/SearchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/border"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelLay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3d333333"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/RelLay1"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/SearchShedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to change and search"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelLay2">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/SheduledRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

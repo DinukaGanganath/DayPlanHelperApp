@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".EventPlan"
+android:background="@drawable/first"
+android:padding="20dp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_rectangle"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/EventPlanTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Plan the event here"
+            android:textSize="30dp"
+            android:textColor="@color/border"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/EventNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Event Name"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/EventPlanTitle"
+            android:textColor="@color/border" />
+        <EditText
+            android:id="@+id/EventNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/EventNameTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_box"
+            android:inputType="text"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/DateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/EventNameEdit"
+            android:textColor="@color/border" />
+        <TextView
+            android:id="@+id/DateEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/DateTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_box"
+            android:hint="Click here to pick the date"
+            android:textSize="20dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/TimeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Time"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/DateEdit"
+            android:textColor="@color/border" />
+        <TextView
+            android:id="@+id/TimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/TimeTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_box"
+            android:hint="Click here to pick the time"
+            android:textSize="20dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/EventCategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Category"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/TimeEdit"
+            android:textColor="@color/border" />
+        <Spinner
+            android:id="@+id/CategorySelect"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/EventCategory"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_box"
+            android:inputType="textPassword"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/DescriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Description"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/CategorySelect"
+            android:textColor="@color/border" />
+        <EditText
+            android:id="@+id/DescriptionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/DescriptionTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_box"
+            android:inputType="text"
+            android:padding="5dp"/>
+        <Button
+            android:id="@+id/AddEventBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DescriptionEdit"
+            android:text="Add Event"
+            android:backgroundTint="@color/border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>
