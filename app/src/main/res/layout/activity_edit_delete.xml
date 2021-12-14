@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDeleteActivity"
+    android:background="@drawable/first"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_rectangle"
+            android:padding="16dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/EventPlanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Delete and Edit"
+                android:textSize="30dp"
+                android:textColor="@color/border"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/EditDeleteEventNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Event Name"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EventPlanTitle"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/EditDeleteEventNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EditDeleteEventNameTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="text"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/EditDeleteDateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Date"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EditDeleteEventNameEdit"
+                android:textColor="@color/border" />
+            <TextView
+                android:id="@+id/EditDeleteDateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EditDeleteDateTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:hint="Click here to pick the date"
+                android:textSize="20dp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/EditDeleteTimeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Time"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EditDeleteDateEdit"
+                android:textColor="@color/border" />
+            <TextView
+                android:id="@+id/EditDeleteTimeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EditDeleteTimeTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:hint="Click here to pick the time"
+                android:textSize="20dp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/EditDeleteEventCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Category"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EditDeleteTimeEdit"
+                android:textColor="@color/border" />
+            <TextView
+                android:id="@+id/EditDeleteCategorySelect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EditDeleteEventCategory"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:padding="5dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/EditDeleteDescriptionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Description"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/EditDeleteCategorySelect"
+                android:textColor="@color/border" />
+            <EditText
+                android:id="@+id/EditDeleteDescriptionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/EditDeleteDescriptionTxt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/custom_box"
+                android:inputType="text"
+                android:padding="5dp"/>
+            <CheckBox
+                android:id="@+id/checky"
+                android:layout_width="match_parent"
+                android:textColor="@color/border"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditDeleteDescriptionEdit"
+                android:text="This event completed successfully"/>
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checky"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <Button
+                    android:id="@+id/EditEventBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:backgroundTint="@color/border"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/DeleteEventBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:backgroundTint="@color/border"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

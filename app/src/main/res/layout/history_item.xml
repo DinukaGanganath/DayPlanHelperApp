@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ItemCard"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/round_corner_rectangle"
+    app:cardBackgroundColor="@color/PadColour"
+    app:cardCornerRadius="7dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/HistoryItemTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/border">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/HistoryItemEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/border"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

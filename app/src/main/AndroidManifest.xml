@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalApplication">
-        <activity android:name=".EventPlan"></activity>
+        <activity android:name=".EventHistoryMain"></activity>
+        <activity android:name=".EditDeleteActivity" />
+        <activity android:name=".EventPlan" />
         <activity android:name=".DayActivityShedules" />
         <activity android:name=".SelectActivity" />
         <activity android:name=".SignUp" />

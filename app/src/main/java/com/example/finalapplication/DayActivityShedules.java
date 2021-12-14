@@ -95,7 +95,9 @@ public class DayActivityShedules extends AppCompatActivity implements DatePicker
                         if(!value.isEmpty()) {
                             for (DocumentChange dc : value.getDocumentChanges()) {
                                 if (dc.getType() == DocumentChange.Type.ADDED) {
-                                    sheduledItemArrayList.add(dc.getDocument().toObject(SheduledItem.class));
+                                    SheduledItem sDI = dc.getDocument().toObject(SheduledItem.class);
+                                    sDI.setId(dc.getDocument().getId());
+                                    sheduledItemArrayList.add(sDI);
                                 }
 
                                 shduledAdapter.notifyDataSetChanged();
